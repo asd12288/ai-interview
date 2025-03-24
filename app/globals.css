@@ -292,6 +292,47 @@
       @apply text-sm font-semibold capitalize;
     }
   }
+
+  .call-view-container {
+    @apply bg-dark-300/20 p-4 rounded-2xl;
+  }
+
+  .card-interviewer {
+    @apply flex flex-col items-center justify-center h-full w-full blue-gradient-dark rounded-xl p-6 relative overflow-hidden;
+  }
+
+  .avatar-container {
+    @apply relative flex items-center justify-center;
+  }
+
+  .avatar {
+    @apply relative flex items-center justify-center blue-gradient rounded-full size-[120px] border-2 border-primary-200/50 mb-2;
+  }
+
+  .animate-speak {
+    @apply absolute inline-flex size-[85%] animate-ping rounded-full bg-primary-200/30 opacity-75;
+  }
+
+  .delay-75 {
+    animation-delay: 0.75s;
+  }
+
+  .delay-150 {
+    animation-delay: 1.5s;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.1;
+    }
+  }
 }
 
 @utility dark-gradient {
